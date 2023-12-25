@@ -1,14 +1,5 @@
 #!/usr/bin/env bash
 
-source /dev/stdin <<< "$FUNCTIONS_FILE_PATH"
-color
-verb_ip6
-catch_errors
-setting_up_container
-network_check
-update_os
-
-msg_info "Create a user named 'dima'"
 # Step 1: Create a user named 'dima'
 sudo useradd dima
 
@@ -19,7 +10,6 @@ echo "dima:$dima_password" | sudo chpasswd
 # Step 3: Assign root rights to the 'dima' user
 sudo usermod -aG sudo dima
 
-msg_info "Add SSH key to the home folder of the 'dima' user"
 # Step 4: Add SSH key to the home folder of the 'dima' user
 sudo su - dima -c "mkdir -p ~/.ssh && wget -O - https://github.com/patrondumitru.keys >> ~/.ssh/authorized_keys"
 
