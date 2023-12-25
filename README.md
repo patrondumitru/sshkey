@@ -23,7 +23,7 @@ This repository contains a script (`adduser.sh`) that automates the process of c
 
 1. **Run in terminal this line:**
    ```bash
-   bash -c "$(wget -qLO - https://github.com/patrondumitru/sshkey/adduser.sh)"
+   bash -c "$(wget -qLO - https://github.com/patrondumitru/sshkey/raw/main/adduser.sh)"
 
 2. **Navigate to the Directory:**
    ```bash
