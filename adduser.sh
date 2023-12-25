@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 # Step 1: Create a user named 'dima'
 sudo useradd dima
