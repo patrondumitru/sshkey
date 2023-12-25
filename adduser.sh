@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 source /dev/stdin <<< "$FUNCTIONS_FILE_PATH"
 color
